@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ReusableCard extends StatelessWidget {
-  ReusableCard({required this.colour, required this.cardChild, required this.onPress});
+  ReusableCard({required this.colour,  this.cardChild, this.onPress});
 
   final Color colour;
-  final Widget cardChild;
-  final VoidCallback onPress;
+  final Widget ?cardChild;
+  final VoidCallback ?onPress;
 
   @override
   Widget build(BuildContext context) {
