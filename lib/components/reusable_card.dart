@@ -24,8 +24,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
   }
 }*/
 class ReusableCard extends StatelessWidget {
-  ReusableCard({required this.colour, this.cardChild});
-  final Color colour;
+  ReusableCard({required this.color, this.cardChild});
+  final Color color;
   final Widget? cardChild;
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class ReusableCard extends StatelessWidget {
       child: cardChild,
       margin: EdgeInsets.all(15.0),
       decoration: BoxDecoration(
-        color: colour,
+        color: color,
         borderRadius: BorderRadius.circular(5.0),
       ),
     );
