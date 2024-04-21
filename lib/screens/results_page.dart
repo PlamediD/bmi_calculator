@@ -5,9 +5,9 @@ import 'package:bmi_calculator/components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
   ResultsPage(
-      {@required this.interpretation,
-        @required this.bmiResult,
-        @required this.resultText});
+      {required this.interpretation,
+        required this.bmiResult,
+        required this.resultText});
 
   final String bmiResult;
   final String resultText;
@@ -36,7 +36,7 @@ class ResultsPage extends StatelessWidget {
           Expanded(
             flex: 5,
             child: ReusableCard(
-              colour: kActiveCardColour,
+              color: kActiveCardColor,
               cardChild: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
