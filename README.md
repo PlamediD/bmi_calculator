@@ -25,3 +25,6 @@ To use the calculator, simply input your height, weight, and gender, and the cal
 - -Dart
 - Android Studio
 
+## Authors
+
+* **Plamedi Diakubama** - *Comp Sci New Grad Looking for a full-time opportunity* - [Plamedi](https://github.com/PlamediD/) -
