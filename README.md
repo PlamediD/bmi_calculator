@@ -1,6 +1,12 @@
-# bmi_calculator
+# BMI Calculator 
 
-A new Flutter project.
+## Description
 
-## Getting Started
-UNDER CONSTRUCTION 
+
+This project serves as a practical exercise to reinforce the lessons learned in the Flutter development course on Udemy.
+
+## Technologies used: 
+- Futter
+- -Dart
+- Android Studio
+
