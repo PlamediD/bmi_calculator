@@ -17,6 +17,8 @@ Returns BMI value along with a comment on whether it's normal, underweight, or o
 Provides interpretation and advice based on BMI result.
 Where weight is in kilograms and height is in meters. The result is rounded to one decimal place.
 
+## Usage
+To use the calculator, simply input your height, weight, and gender, and the calculator will provide your BMI along with a comment on your weight status.
 
 ## Technologies used: 
 - Futter
