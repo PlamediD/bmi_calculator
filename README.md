@@ -25,6 +25,11 @@ To use the calculator, simply input your height, weight, and gender, and the cal
 - -Dart
 - Android Studio
 
+![android studio](https://github.com/PlamediD/bmi_calculator/assets/87151146/2a1daadb-da4b-47ac-8fcb-71e7dcdad630)
+![dart](https://github.com/PlamediD/bmi_calculator/assets/87151146/c6da64f6-75af-414c-a879-aeebcdffaa21)
+![flutter](https://github.com/PlamediD/bmi_calculator/assets/87151146/5806e4dd-eba9-49f4-9fca-7d595a9535b6)
+
+
 ## Authors
 
 * **Plamedi Diakubama** - *Comp Sci New Grad Looking for a full-time opportunity* - [Plamedi](https://github.com/PlamediD/) -
