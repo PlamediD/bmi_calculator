@@ -22,7 +22,7 @@ class _InputPageState extends State<InputPage> {
   Gender? selectedGender;
   int height = 180;
   int weight = 60;
-  int age=24;
+  int age = 24;
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +77,7 @@ class _InputPageState extends State<InputPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text(
+                    const Text(
                       'HEIGHT',
                       style: kLabelTextStyle,
                     ),
@@ -90,7 +90,7 @@ class _InputPageState extends State<InputPage> {
                           height.toString(),
                           style: kNumberTextStyle,
                         ),
-                        Text(
+                        const Text(
                           'cm',
                           style: kLabelTextStyle,
                         )
@@ -103,9 +103,9 @@ class _InputPageState extends State<InputPage> {
                         thumbColor: Color(0xFFEB1555),
                         overlayColor: Color(0x29EB1555),
                         thumbShape:
-                        RoundSliderThumbShape(enabledThumbRadius: 15.0),
+                            RoundSliderThumbShape(enabledThumbRadius: 15.0),
                         overlayShape:
-                        RoundSliderOverlayShape(overlayRadius: 30.0),
+                            RoundSliderOverlayShape(overlayRadius: 30.0),
                       ),
                       child: Slider(
                         value: height.toDouble(),
@@ -131,40 +131,40 @@ class _InputPageState extends State<InputPage> {
                     color: kActiveCardColor,
                     cardChild: SingleChildScrollView(
                       child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Text(
-                              'WEIGHT',
-                              style: kLabelTextStyle,
-                            ),
-                            Text(
-                              weight.toString(),
-                              style: kNumberTextStyle,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: <Widget>[
-                                RoundIconButton(
-                                    icon: FontAwesomeIcons.minus,
-                                    onPressed: () {
-                                      setState(() {
-                                        weight--;
-                                      });
-                                    }),
-                                SizedBox(
-                                  width: 10.0,
-                                ),
-                                RoundIconButton(
-                                  icon: FontAwesomeIcons.plus,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          const Text(
+                            'WEIGHT',
+                            style: kLabelTextStyle,
+                          ),
+                          Text(
+                            weight.toString(),
+                            style: kNumberTextStyle,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              RoundIconButton(
+                                  icon: FontAwesomeIcons.minus,
                                   onPressed: () {
                                     setState(() {
-                                      weight++;
+                                      weight--;
                                     });
-                                  },
-                                ),
-                              ],
-                            ),
-                          ],
+                                  }),
+                              const SizedBox(
+                                width: 10.0,
+                              ),
+                              RoundIconButton(
+                                icon: FontAwesomeIcons.plus,
+                                onPressed: () {
+                                  setState(() {
+                                    weight++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -176,7 +176,7 @@ class _InputPageState extends State<InputPage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text(
+                          const Text(
                             'AGE',
                             style: kLabelTextStyle,
                           ),
@@ -194,7 +194,7 @@ class _InputPageState extends State<InputPage> {
                                       age--;
                                     });
                                   }),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10.0,
                               ),
                               RoundIconButton(
@@ -210,7 +210,6 @@ class _InputPageState extends State<InputPage> {
                         ],
                       ),
                     ),
-
                   ),
                 ),
               ],
@@ -220,7 +219,7 @@ class _InputPageState extends State<InputPage> {
             buttonTitle: 'CALCULATE',
             onTap: () {
               CalculatorBrain calc =
-              CalculatorBrain(height: height, weight: weight);
+                  CalculatorBrain(height: height, weight: weight);
 
               Navigator.push(
                 context,
